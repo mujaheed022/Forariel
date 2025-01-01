@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Quote Generator for Ariel</title>
+    <style>
+        body {
+            font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif; /* Changed font style */
+            background: url('bg.jpg') no-repeat center center fixed; /* Use the bg.jpg as background image */
+            background-size: cover; /* Cover the entire background */
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            color: #fff; /* Bold white font color for better contrast */
+        }
+        .quote-container {
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            font-weight: bold; /* Increase font weight for bold text */
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold; /* Bold text for button */
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Love Quotes for Ariel</h1>
+    <div class="quote-container">
+        <p id="quote">Click the button to generate a quote for you my beloved Ariel!</p>
+        <button onclick="generateQuote()">Generate Quote</button>
+    </div>
+
+    <script>
+        const quotes = [
+            "Ariel, you light up my world in the most beautiful ways.",
+            "To Ariel, my dearest friend, your laughter is my favorite sound.",
+            "Ariel, your kindness and warmth inspire me every day.",
+            "No distance can diminish the bond we share, Ariel.",
+            "Ariel, your friendship is a treasure I cherish deeply.",
+            "With every moment, my thoughts are filled with you, Ariel.",
+            "Ariel, your smile is my favorite reminder of happiness.",
+            "No matter where life takes us, you’ll always have a special place in my heart, Ariel.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like home.",
+            "Ariel, your presence makes everything brighter.",
+            "Ariel, the way you understand and support me means everything.",
+            "Ariel, your laughter turns every moment into something special.",
+            "Ariel, every conversation with you feels like a warm hug.",
+            "Ariel, your strength inspires me more than you know.",
+            "Ariel, when I heard your voice on yesterday's call, it reminded me of how much I care.",
+            "Ariel, your kindness touches hearts everywhere.",
+            "Ariel, every smile you share lights up the world around you.",
+            "Ariel, your support lifts me up in ways I can’t describe.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like the best part of my day.",
+            "Ariel, your friendship is a gift I treasure every moment.",
+            "Ariel, the way you bring joy to those around you is truly special.",
+            "Ariel, when I heard your voice on yesterday's call, I realized how much you mean to me.",
+            "Ariel, your presence makes even the hardest days feel lighter.",
+            "Ariel, every word from you is a reminder of the bond we share.",
+            "Ariel, your laughter echoes in my heart.",
+            "Ariel, when I heard your voice on yesterday's call, it brought a smile to my face.",
+            "Ariel, your friendship is a source of endless inspiration.",
+            "Ariel, every moment with you feels like a cherished memory.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like everything was right.",
+            "Ariel, your warmth lights up even the darkest days.",
+            "Ariel, your words carry a sense of comfort I hold dear.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like a connection that never fades.",
+            "Ariel, your laughter is the melody of my life.",
+            "Ariel, when I heard your voice on yesterday's call, it reminded me of how much you care.",
+            "Ariel, your presence is a source of calm and peace.",
+            "Ariel, your kindness creates a ripple of joy wherever you go.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like a warm embrace.",
+            "Ariel, your friendship is a beautiful journey I’m grateful for.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like a connection that grows stronger every day.",
+            "Ariel, your smile is my favorite reminder of happiness.",
+            "Ariel, when I heard your voice on yesterday's call, it brought me a sense of peace.",
+            "Ariel, your laughter is the soundtrack of my days.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like a reminder of how much we mean to each other.",
+            "Ariel, your presence makes every moment feel special.",
+            "Ariel, when I heard your voice on yesterday's call, it brought a smile to my face.",
+            "Ariel, your friendship is a light that guides me.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like a moment I’ll cherish forever.",
+            "Ariel, your warmth is the comfort I seek.",
+            "Ariel, when I heard your voice on yesterday's call, it reminded me of the connection we share.",
+            "Ariel, your laughter fills my heart with joy.",
+            "Ariel, when I heard your voice on yesterday's call, it felt like everything was brighter."
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const quoteElement = document.getElementById('quote');
+            quoteElement.textContent = quotes[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
